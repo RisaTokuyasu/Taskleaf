@@ -19,10 +19,10 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to root_path, notice: 'ログアウトしました。'
   end
-end
 
-private
+  private
 
-def session_params
-  params.require(:session).permit(:email, :password)
+  def session_params
+    params.require(:session).permit(:email, :password)
+  end
 end

@@ -90,6 +90,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    cssbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -103,6 +105,7 @@ GEM
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
     ffi (1.15.5)
+    foreman (0.87.2)
     globalid (1.1.0)
       activesupport (>= 5.0)
     hpricot (0.8.6)
@@ -270,8 +273,10 @@ DEPENDENCIES
   bootsnap
   bootstrap
   capybara
+  cssbundling-rails
   debug
   factory_bot_rails
+  foreman
   html2slim
   importmap-rails
   jbuilder
