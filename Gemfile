@@ -78,3 +78,4 @@ end
 gem 'importmap-rails'
 gem "cssbundling-rails"
 gem "foreman"
+gem 'ransack'
