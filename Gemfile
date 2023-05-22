@@ -75,3 +75,6 @@ group :test do
   gem "rspec-rails", "~> 4.0.1"
   gem 'factory_bot_rails'
 end
+gem 'importmap-rails'
+gem "cssbundling-rails"
+gem "foreman"

@@ -35,10 +35,6 @@ describe 'タスク管理機能', type: :system do
       let(:login_user) { user_a }
 
       before do
-        visit login_path
-        fill_in 'メールアドレス', with: login_user.email
-        fill_in 'パスワード', with: login_user.password
-        click_button 'ログインする'
         visit task_path(task_a)
       end
 
@@ -53,10 +49,6 @@ describe 'タスク管理機能', type: :system do
     let(:task_name) { '新規作成のテストを書く' } # デフォルトとして設定
 
     before do
-      visit login_path
-      fill_in 'メールアドレス', with: login_user.email
-      fill_in 'パスワード', with: login_user.password
-      click_button 'ログインする'
       visit new_task_path
       fill_in '名称', with: task_name
       click_button '登録する'
